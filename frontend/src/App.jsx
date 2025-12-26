@@ -103,12 +103,13 @@ const Hero = () => {
             transition={{ duration: 1, delay: 0.2 }}
             className="relative"
           >
-            <div className="w-full aspect-square bg-gradient-to-br from-brand-light/20 to-brand-medium/20 rounded-3xl relative overflow-hidden flex items-center justify-center">
+            <div className="w-full aspect-[4/3] bg-gradient-to-br from-brand-light/20 to-brand-medium/20 rounded-3xl relative overflow-hidden flex items-center justify-center shadow-2xl">
               <div className="absolute inset-0 opacity-20 blur-3xl bg-brand-accent/30 rounded-full animate-pulse transform translate-x-1/2 -translate-y-1/2"></div>
-              <div className="relative z-10 flex flex-col items-center">
-                <Brain className="w-40 h-40 text-brand-medium animate-pulse" />
-                <div className="absolute -inset-4 bg-brand-medium/5 rounded-full blur-2xl -z-10"></div>
-              </div>
+              <img
+                src="/hero-ai.jpg"
+                alt="AI and Data Management"
+                className="w-full h-full object-cover rounded-3xl"
+              />
             </div>
           </motion.div>
         </div>
