@@ -74,6 +74,20 @@ const Hero = () => {
             <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg">
               Somos especialistas em criar soluções de Machine Learning, Engenharia de Dados e Inteligência Artificial para empresas que buscam inovação e escala.
             </p>
+
+            {/* Added Specialized Tools */}
+            <div className="mb-10">
+              <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-4">Especialistas em:</p>
+              <div className="flex items-center gap-8 opacity-70 grayscale hover:grayscale-0 transition-all">
+                <div className="flex items-center gap-2">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Databricks_Logo.png" alt="Databricks" className="h-6 w-auto" />
+                </div>
+                <div className="flex items-center gap-2 font-bold text-gray-600">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg" alt="Google Cloud" className="h-8 w-auto" />
+                </div>
+              </div>
+            </div>
+
             <div className="flex flex-wrap gap-4">
               <a href="#contact" className="px-8 py-4 bg-brand-medium text-white rounded-xl font-bold flex items-center gap-2 hover:bg-brand-dark shadow-lg shadow-brand-medium/20 transition-all">
                 Iniciar Projeto <ChevronRight size={20} />
@@ -90,8 +104,11 @@ const Hero = () => {
             className="relative"
           >
             <div className="w-full aspect-square bg-gradient-to-br from-brand-light/20 to-brand-medium/20 rounded-3xl relative overflow-hidden flex items-center justify-center">
-              <div className="absolute inset-0 opacity-10 blur-3xl bg-brand-accent/30 rounded-full animate-pulse transform translate-x-1/2 -translate-y-1/2"></div>
-              <Rocket className="w-32 h-32 text-brand-medium animate-bounce" />
+              <div className="absolute inset-0 opacity-20 blur-3xl bg-brand-accent/30 rounded-full animate-pulse transform translate-x-1/2 -translate-y-1/2"></div>
+              <div className="relative z-10 flex flex-col items-center">
+                <Brain className="w-40 h-40 text-brand-medium animate-pulse" />
+                <div className="absolute -inset-4 bg-brand-medium/5 rounded-full blur-2xl -z-10"></div>
+              </div>
             </div>
           </motion.div>
         </div>
